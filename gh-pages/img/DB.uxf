@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>657</x>
+      <y>225</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+selectedphoto
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>999</x>
+      <y>153</y>
+      <w>117</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>photo
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>171</y>
+      <w>261</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+1..*</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>234</y>
+      <w>144</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>User
+--
+(bedrijfsnaam)
+adress</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>531</x>
+      <y>243</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+1..*</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>18</y>
+      <w>153</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Role
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>63</y>
+      <w>45</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>lt=-
+\*..*/</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>621</x>
+      <y>18</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Model
+--
+vaas
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>45</y>
+      <w>108</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Details
+--
+id
+question
+answer
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>702</x>
+      <y>63</y>
+      <w>198</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=-
+\*..*/</panel_attributes>
+    <additional_attributes>200.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>72</y>
+      <w>72</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+\1..*/</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>342</y>
+      <w>207</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>History
+--
+id
+start_period
+end_period
+description</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>279</y>
+      <w>108</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+1..*</panel_attributes>
+    <additional_attributes>100.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>243</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>currency
+--
+- name
+- symbol
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1008</x>
+      <y>333</y>
+      <w>108</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>language
+--
+- language
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>252</y>
+      <w>270</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+*..1</panel_attributes>
+    <additional_attributes>280.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>252</y>
+      <w>270</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+*..1</panel_attributes>
+    <additional_attributes>280.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>567</y>
+      <w>117</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Tokens
+--
+id
+valid_date
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>297</x>
+      <y>567</y>
+      <w>153</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>New_Users
+--
+email
+verification_token_id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>603</y>
+      <w>189</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+1..1</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>567</y>
+      <w>117</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Token Types
+--
+- verification tokens
+- new password</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>603</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+*..1</panel_attributes>
+    <additional_attributes>10.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>495</x>
+      <y>378</y>
+      <w>117</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>User_has_token
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>459</x>
+      <y>297</y>
+      <w>108</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+1..1</panel_attributes>
+    <additional_attributes>100.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>468</y>
+      <w>153</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+1..1</panel_attributes>
+    <additional_attributes>150.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>50</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Code</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>380</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Github</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>550</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Travis CI</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>760</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Digital Ocean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>980</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Docker </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>500</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+push</panel_attributes>
+    <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>500</y>
+      <w>80</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+build
+</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>500</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+publish
+
+</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>500</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+deploy
+
+</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>550</x>
+      <y>580</y>
+      <w>190</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Travis CI
+--
+V .travis.yml
+V deploy to docker repo
+- Maven - deftige pom.xml
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>990</x>
+      <y>560</y>
+      <w>140</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Docker
+--
+- dockerfile
+- pull from repo
+- deploy application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>680</x>
+      <y>730</y>
+      <w>440</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Digital Ocean
+--
+- install ubuntu
+- deploy docker daemon
+- deploy resource management application (which one?)
+- deploy watchtower
+- make development and production env
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1150</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>REST
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1090</x>
+      <y>500</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Running
+
+</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1360</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Mobile
+Application</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1610</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>React Native</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>500</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;exchange&gt;&gt;</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1470</x>
+      <y>500</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+build to </panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1160</x>
+      <y>570</y>
+      <w>200</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>REST Application
+--
+- scaling testing | stress testing?
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>300</x>
+      <y>580</y>
+      <w>230</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Github
+--
+V make a red-blue development
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>0</x>
+      <y>590</y>
+      <w>260</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>Code
+--
+- working autogenerated swagger ui
+- JUnit tests
+- Smoke tests
+- make microservices
+- implement AGILE and BASIC stories
+- learn to work with Postman
+- OAUTH2|openid authentication!
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1400</x>
+      <y>640</y>
+      <w>140</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Mobile Application
+--
+- Testclasses
+- use MVVM model
+- Eject project
+- use native modules
+- interact with api
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>530</y>
+      <w>50</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;30.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>390</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=.
+&lt;&lt;exchange&gt;&gt;</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1360</x>
+      <y>380</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Website
+frontend</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1610</x>
+      <y>380</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>bulma &amp; materialD</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1470</x>
+      <y>380</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+build to </panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1350</x>
+      <y>90</y>
+      <w>280</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Website
+--
+- new controller or just use api?
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>100</x>
+      <y>170</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Master</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>100</x>
+      <y>0</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>100</x>
+      <y>270</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>180</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>400</x>
+      <y>170</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Live</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>200</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+git merge master
+git checkout master
+git merge blue</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>30</y>
+      <w>190</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+git merge master
+git checkout master
+git merge red
+git push origin red:master
+pp</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>20</x>
+      <y>60</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+git checkout red
+git merge master</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>

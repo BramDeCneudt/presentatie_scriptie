@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+fontsize=10
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// This text will be stored with each diagram;  use it for notes.</help_text>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>414</y>
+      <w>126</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+- id: long
+- name: string
+
+- description: string
+- owner: Owner
+- model: Model
+
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1350</x>
+      <y>408</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>History
+--
+- id: long
+- description: string
+- 
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1224</x>
+      <y>444</y>
+      <w>138</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+1..*
+- histories</panel_attributes>
+    <additional_attributes>210.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>600</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Detail
+--
+- Question
+- Answer
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>204</y>
+      <w>192</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- username: string
+- password: string
+- role: string
+--
+*user has favorites/bookmarks of items*
+
+*client has list of items, he owns* ownedItems
+*client has list of items he made*	madeItems
+*owner can also be maker? *
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>0</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Role
+--
+
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>954</x>
+      <y>312</y>
+      <w>48</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+1..*
+owned-items</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>552</y>
+      <w>18</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1104</x>
+      <y>420</y>
+      <w>126</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Model
+--
+- id: long
+- brand: string
+
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>966</x>
+      <y>432</y>
+      <w>150</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- items
+*..1</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>954</x>
+      <y>108</y>
+      <w>24</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+1..*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>204</y>
+      <w>192</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>New User
+--
+- email: string
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>204</y>
+      <w>126</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Token
+--
+- id: long
+- token: string
+- expirationdate: 
+--
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>252</y>
+      <w>66</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+1..1
+- token</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>732</x>
+      <y>252</y>
+      <w>126</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+1..1
+- token</panel_attributes>
+    <additional_attributes>10.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>414</y>
+      <w>168</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>&lt;abstract&gt;
+Message
+--
+- sendTo : string
+- subject : string
+- text : string
+- args : Object[]
+- model : Map&lt;String, Object&gt; 
+--
+- getText() : String
+- getModel() : Map&lt;String, Object&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>546</x>
+      <y>414</y>
+      <w>198</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>&lt;Interface&gt;
+MailSender
+--
+
+--
+- sendMessage(Message message) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>600</y>
+      <w>198</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>PlainMailSender
+--
+
+- emailSender : JavaMailSender
+
+--
+- sendMessage(Message message) : void
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>636</x>
+      <y>600</y>
+      <w>192</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>HTMLSender
+--
+
+- emailSender : JavaMailSender
+- templateEngine : SpringTemplateEngine
+
+--
+- sendMessage(Message message) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>522</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>522</y>
+      <w>96</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>600</y>
+      <w>168</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>SimpleMessage
+--
+- sendTo : string
+- subject : string
+- text : string
+- args : Object[]
+
+--
+- getText() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>522</y>
+      <w>66</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>600</y>
+      <w>168</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>TokenHTMLMessage
+--
+- sendTo : string
+- subject : string
+- model : Map&lt;String, Object&gt; 
+--
+- getModel() : Map&lt;String, Object&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>522</y>
+      <w>156</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>414</y>
+      <w>234</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;370.0;10.0</additional_attributes>
+  </element>
+</diagram>

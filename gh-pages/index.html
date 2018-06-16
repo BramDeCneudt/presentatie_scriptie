@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Antiquity - slides</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/sky.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section id="antiquity" class="text-align-left">
+
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<img src="img/logo-white-kader.png" alt="logo">
+				</section>
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<h3 class="white-color-text">
+						Small Business Project?
+					</h3>
+					<ul>
+						<li>Eigen onderneming - school</li>
+						<li>Diverse groep - verschillende richtingen</li>
+						<li>High support - Low risk</li>
+					</ul>
+				</section>
+
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<h3 class="white-color-text">
+						Antiquity
+					</h3>
+					<ul>
+						<li>Uniek webplatform</li>
+						<li>voor antiquairs</li>
+						<li>stelt antieke voorwerpen online voor</li>
+						<ul>
+							<li>historiek, details, herkomst, ...</li>
+						</ul>
+						<li>makkelijk te bereiken door QR code</li>
+						<li>geeft online boost aan antiquair</li>
+					</ul>
+				</section>
+
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<div>
+						<img src="img/id-url.PNG" alt="" style="margin: auto; display: block; width: 50% ">
+					</div>
+					<img src="img/voorwerp.PNG" alt="">
+				</section>
+
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<img src="img/details.PNG" alt="">
+					<img src="img/history.PNG" alt="" class="slide-img">
+				</section>
+
+
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<img src="img/klant.PNG" alt="">
+				</section>
+				<section data-background="img/background.jpeg">
+					<img src="img/klant2.PNG" alt="">
+				</section>
+				<section data-background="img/background.jpeg" class="white-color-text">
+					<p>Technisch luik</p>
+					<ol>
+						<li>UML DB - probleemoplossing</li>
+						<li>UML Domain - probleemoplossing</li>
+						<li>DEMO</li>
+						<li>Dev Flow - Docker</li>
+						<li>Layout - startpagina, get item, add item, ...</li>
+					</ol>
+				</section>
+
+			</section>
+
+
+			<section id="uml-db" class="text-align-left">
+				<section>
+					<h1>1 - UML DB</h1>
+				</section>
+				<section data-background="img/DB.jpg" data-background-size="contain">
+				</section>
+				<section>
+					<p class="highlight-red">Juiste gedeelte van applicatie openstellen aan juiste guest?</p>
+					<p class="highlight-green">BV: new users, forgot password</p>
+					<p>Requirements:</p>
+					<ul>
+						<li>Secure</li>
+						<li>Extendable</li>
+						<li>Timely</li>
+						<li>No Account</li>
+					</ul>
+				</section>
+				<section data-background="img/verificationtoken.jpg" data-background-size="contain" class="black-color-text">
+					<p class="fragment" data-fragment-index="1">Tokens</p>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Secure</li>
+						<li class="fragment" data-fragment-index="1">Extendable</li>
+						<li class="fragment" data-fragment-index="1">Timely</li>
+						<li class="fragment" data-fragment-index="1">No Account - Token</li>
+					</ul>
+				</section>
+
+				<section data-background="img/verificationtoken-extended.jpg" data-background-size="contain">
+				</section>
+
+			</section>
+
+
+			<section id="uml-domain">
+				<section>
+					<h1>2 - UML Domain</h1>
+				</section>
+				<section data-background="img/klasseLayout.jpg" data-background-size="contain">
+
+				</section>
+				<section class="text-align-left">
+					<p class="highlight-red">Hoe verzend ik informatie naar mijn gebruikers?</p>
+					<p class="highlight-green">BV: geef token voor nieuwe gebruikers of iemand dat zijn wachtwoord is vergeten, stuur een welkombericht, ...</p>
+					<p>Requirements:</p>
+					<ul>
+						<li>Easy To Make New Messages</li>
+						<li>Can easily inject variables in text</li>
+						<li>Can redirect to our website</li>
+					</ul>
+				</section>
+				<section data-background="img/mail.jpg" data-background-size="contain" class="black-color-text text-align-left">
+					<p class="fragment" data-fragment-index="1">Mail Implementation</p>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Easy to make new Messages</li>
+						<li class="fragment" data-fragment-index="1">Can inject variables in text</li>
+						<li class="fragment" data-fragment-index="1">Can redirct to our website</li>
+					</ul>
+				</section>
+				<section data-background="img/mail-extend.jpg" data-background-size="contain">
+
+				</section>
+				<section>
+					<h5>forgot password html file</h5>
+					<pre>
+							<code data-trim>
+								<p><span >Welkom bij Antiquity!&#160;</span></p>
+								<p><span >&#160;</span></p>
+								<p><span >In deze mail treft u een nieuwe link
+									 om uw wachtwoord te veranderen:  &#160;</span></p>
+								<p><span ><a target="_blank" th:href="${link}" th:text="${link}"></a>
+								</a></span></p>
+								<p><span >&#160;</span></p>
+								<p><span >!OPGELET deze link is maar 24h geldig,
+									hierna dient deze opnieuw opgevraagd te worden.</span></p>							
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<pre>
+							<code data-trim data-noescape>
+							HashMap<String, Object> model = new HashMap<>();
+							model.put("link", confirmationUrl);
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<h5>Message example</h5>
+					<pre>
+					<code data-trim data-noescape>
+					public class RegistrationNewEmailHtmlMessage extends Message {
+						public RegistrationNewEmailHtmlMessage
+						(String sendTo, String subject, Map<String, Object> model) {
+							super(sendTo, subject, model);
+							model.put("template", "newemailregistration");
+						}
+					}
+					</code>
+				</pre>
+				</section>
+				<section data-background="img/send-mail.PNG" data-background-size="contain">
+
+				</section>
+
+			</section>
+
+			<section id="demo-dbendomain">
+				<section>
+					<h1>3 - Demo</h1>
+					<p>token en mail</p>
+				</section>
+				<section id="forgot-password-file" data-background="img/forgot-password.PNG" data-background-size="contain">
+
+				</section>
+				<section id="token-db" data-background="img/token-db.PNG" data-background-size="contain">
+
+				</section>
+				<section data-background="img/send-mail.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" id="forgot-password-form" data-background="img/forgot-password-form.PNG" data-background-size="contain">
+					<p>https://localhost/registration/token?token=d23b2869-fec3-4531-9581-05d02a348c65</p>
+				</section>
+				<section id="invalid-token" data-background="img/invalid-token.PNG" data-background-size="contain">
+
+				</section>
+				<section id="expired-token" data-background="img/expired-token.PNG" data-background-size="contain">
+
+				</section>
+			</section>
+
+
+			<section id="flow">
+
+					<section>
+						<h1>4 - flow - Docker</h1>
+					</section>
+
+					<section data-background="img/docker-facebook.png" data-background-size="contain">
+
+					</section>
+					<!--https://logz.io/blog/what-is-docker/-->
+	
+					<section class="text-align-left">
+						<p>Docker</p>
+						<ul>
+							<li>"image" dat alles bevat om te runnen</li>
+							<li>hardware/software onafhankelijk -
+								<br> docker daemon</li>
+							<li>bv apache server, spring boot project, ...</li>
+							<li>docker image:tag - verschillende versies</li>
+						</ul>
+					</section>
+
+				<section data-background="img/flow.jpg" data-background-size="contain">
+
+				</section>
+
+
+				<section data-background="img/flow-simple.jpg" data-background-size="contain">
+
+				</section>
+
+				<section data-background="img/docker-folder-normal.PNG" data-background-size="contain">
+
+				</section>
+				<section data-background="img/docker-website-local.PNG" data-background-size="contain">
+
+				</section>
+				<section data-background="img/docker-folder-docker.PNG" data-background-size="contain">
+
+				</section>
+				<section>
+					<p>Dockerfile</p>
+					<pre><code data-trim data-noescape>
+						FROM php:7.0-apache
+
+						COPY config/php.ini /usr/local/etc/php/
+	
+						COPY css/ /var/www/html/css/
+						COPY js/ /var/www/html/js/
+						COPY index.php /var/www/html/
+	
+						EXPOSE 80
+					</code></pre>
+				</section>
+				<section data-background="img/docker-hub-automated-build.PNG" data-background-size="contain">
+
+				</section>
+				<section class="text-align-left">
+					<pre><code data-trim data-noescape>
+						docker run -d -p 80:80 bramdc/docker-demo
+					</code></pre>
+					<ul>
+						<li>database?</li>
+						<li>watchtower?</li>
+						<li>monitoring?</li>
+					</ul>
+				</section>
+				<section>
+					<p>docker-compose</p>
+					<pre><code data-trim data-noescape>
+						docker-compose up -d
+					</code></pre>
+					<pre><code class="inherit-height no-x-as" data-trim data-noescape>
+							version: '3'
+							services:
+							 docker-demo:
+							   image: index.docker.io/bramdc/docker-demo
+							   labels:
+								 - "com.centurylinklabs.watchtower.enable=true"
+							   ports:
+								 - "1516:80"
+							 db:
+							   image: mysql
+							   restart: always
+							   environment:
+								 MYSQL_ROOT_PASSWORD: [PASSWORD]
+							 watchtower:
+							   image: v2tec/watchtower
+							   volumes:
+								 - /var/run/docker.sock:/var/run/docker.sock
+								 - /root/.docker/config.json:/config.json
+							   command: --interval 30 --label-enable --debug						   
+					</code></pre>
+				</section>
+
+			</section>
+
+			<section id="layout">
+				<section>
+						<h1 class="">5 - Layout</h1>
+				</section>
+				<section class="zero-top" data-background="img/layout.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/layout-3.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/layout-4.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/layout-2.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/qr-code.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/get-item.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/get-item-full.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top">
+					<img src="img/details.PNG" alt="">
+					<img src="img/history.PNG" alt="" class="slide-img">
+				</section>
+				<section class="zero-top" data-background="img/add-item-1.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/add-item-3.PNG" data-background-size="contain">
+
+				</section>
+				<section class="zero-top" data-background="img/add-item-4.PNG" data-background-size="contain">
+
+				</section>
+			</section>
+			<section>
+				<h1>Vragen?</h1>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>110</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;abstract&gt;
+Message
+--
+- sendTo : string
+- subject : string
+- text : string
+- args : Object[]
+- model : Map&lt;String, Object&gt; 
+--
+- getText() : String
+- getModel() : Map&lt;String, Object&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1090</x>
+      <y>110</y>
+      <w>330</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;Interface&gt;
+MailSender
+--
+
+--
+- sendMessage(Message message) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>420</y>
+      <w>330</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>PlainMailSender
+--
+
+- emailSender : JavaMailSender
+
+--
+- sendMessage(Message message) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1240</x>
+      <y>420</y>
+      <w>320</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>HTMLSender
+--
+
+- emailSender : JavaMailSender
+- templateEngine : SpringTemplateEngine
+
+--
+- sendMessage(Message message) : void </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1010</x>
+      <y>290</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1230</x>
+      <y>290</y>
+      <w>160</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>420</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>SimpleMessage
+--
+- sendTo : string
+- subject : string
+- text : string
+- args : Object[]
+
+--
+- getText() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>290</y>
+      <w>110</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>420</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>TokenHTMLMessage
+--
+- sendTo : string
+- subject : string
+- model : Map&lt;String, Object&gt; 
+--
+- getModel() : Map&lt;String, Object&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>290</y>
+      <w>270</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>100</y>
+      <w>390</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+- message</panel_attributes>
+    <additional_attributes>10.0;20.0;370.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>140</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ForgotMessageHTMLMessage
+--
+- sendTo : string
+- subject : string
+- model : Map&lt;String, Object&gt; 
+--
+- getModel() : Map&lt;String, Object&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>160</y>
+      <w>200</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+</diagram>
