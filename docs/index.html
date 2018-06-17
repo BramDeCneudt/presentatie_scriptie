@@ -228,25 +228,25 @@
 
 			<section id="flow">
 
-					<section>
-						<h1>4 - flow - Docker</h1>
-					</section>
+				<section>
+					<h1>4 - flow - Docker</h1>
+				</section>
 
-					<section data-background="img/docker-facebook.png" data-background-size="contain">
+				<section data-background="img/docker-facebook.png" data-background-size="contain">
 
-					</section>
-					<!--https://logz.io/blog/what-is-docker/-->
-	
-					<section class="text-align-left">
-						<p>Docker</p>
-						<ul>
-							<li>"image" dat alles bevat om te runnen</li>
-							<li>hardware/software onafhankelijk -
-								<br> docker daemon</li>
-							<li>bv apache server, spring boot project, ...</li>
-							<li>docker image:tag - verschillende versies</li>
-						</ul>
-					</section>
+				</section>
+				<!--https://logz.io/blog/what-is-docker/-->
+
+				<section class="text-align-left">
+					<p>Docker</p>
+					<ul>
+						<li>"image" dat alles bevat om te runnen</li>
+						<li>hardware/software onafhankelijk -
+							<br> docker daemon</li>
+						<li>bv apache server, spring boot project, ...</li>
+						<li>docker image:tag - verschillende versies</li>
+					</ul>
+				</section>
 
 				<section data-background="img/flow.jpg" data-background-size="contain">
 
@@ -325,7 +325,7 @@
 
 			<section id="layout">
 				<section>
-						<h1 class="">5 - Layout</h1>
+					<h1 class="">5 - Layout</h1>
 				</section>
 				<section class="zero-top" data-background="img/layout.PNG" data-background-size="contain">
 
@@ -377,16 +377,22 @@
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
 			multiplex: {
-		// Example values. To generate your own, see the socket.io server instructions.
-		secret: null, // null so the clients do not have control of the master presentation
-		id: '538e25cf71729bf9', // id, obtained from socket.io server
-		url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
-	},
+				// Example values. To generate your own, see the socket.io server instructions.
+				secret: null, // null so the clients do not have control of the master presentation
+				id: '538e25cf71729bf9', // id, obtained from socket.io server
+				url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+			},
 			dependencies: [{
 					src: 'plugin/markdown/marked.js'
 				},
-						{ src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-		{ src: 'plugin/multiplex/client.js', async: true }
+				{
+					src: '//cdn.socket.io/socket.io-1.3.5.js',
+					async: true
+				},
+				{
+					src: 'plugin/multiplex/client.js',
+					async: true
+				},
 				{
 					src: 'plugin/markdown/markdown.js'
 				},
